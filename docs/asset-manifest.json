@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/arturfarias/Portfolio/static/css/main.31d6cfe0.css",
+    "main.js": "/arturfarias/Portfolio/static/js/main.3571fd32.js",
+    "static/js/453.ad7768ec.chunk.js": "/arturfarias/Portfolio/static/js/453.ad7768ec.chunk.js",
+    "index.html": "/arturfarias/Portfolio/index.html",
+    "main.3571fd32.js.map": "/arturfarias/Portfolio/static/js/main.3571fd32.js.map",
+    "453.ad7768ec.chunk.js.map": "/arturfarias/Portfolio/static/js/453.ad7768ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.3571fd32.js"
+  ]
+}
