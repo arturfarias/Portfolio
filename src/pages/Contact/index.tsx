@@ -1,5 +1,6 @@
 import React from "react";
-import "./Contact.css";
+import pages from "../../Pages.module.css";
+import styles from "./Contact.module.css";
 
 interface Props {
 
@@ -7,7 +8,10 @@ interface Props {
 
 const Contact: React.FC<Props> = () => {
   return (
-    <h1>Contato</h1>
+    <div className={pages.card}>
+      <h1 className={pages.title}>Contato</h1>
+      
+    </div>
   );
 };
 
