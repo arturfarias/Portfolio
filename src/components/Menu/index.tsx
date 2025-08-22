@@ -15,7 +15,7 @@ interface Props {
 const Menu: React.FC<Props> = () => {
   return (
   <Sidebar 
-  backgroundColor="#1f1f1f"
+  backgroundColor="#1e1e2f"
   rootStyles={{
     borderRight: "none",}}
   >
@@ -24,13 +24,14 @@ const Menu: React.FC<Props> = () => {
         button: ({ level, active, disabled, open }) => {
           let bgColor = "transparent";
           if (level === 0) {
-            bgColor = open ? "#333" : "transparent";
+            bgColor = open ? "#1e1e2f" : "transparent";
           }
           if (level > 0) {
-            bgColor = open ? "#444" : "#222";
+            bgColor = open ? "#1e1e2f" : "#1e1e2f";
           }
           return {
             backgroundColor: bgColor,
+            color: "#FFFFFF",
             "&:hover": {
               backgroundColor: "#555",
             },
@@ -38,6 +39,7 @@ const Menu: React.FC<Props> = () => {
         },
       }}
     >
+      <h1>Portfolio</h1>
       <MenuItem icon={<CgProfile />} component={<Link to="/profile" />}>Sobre </MenuItem>
         <SubMenu label="Projetos" icon={<FaLaptopCode />}>
           <MenuItem icon={<IoHelpCircleOutline />}> Projeto 1</MenuItem>
