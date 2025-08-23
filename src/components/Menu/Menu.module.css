@@ -1,0 +1,10 @@
+.logo {
+    color: blue;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #89f7fe, #66a6ff); 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}

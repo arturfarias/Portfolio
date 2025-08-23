@@ -16,14 +16,17 @@ const Profile: React.FC<Props> = () => {
       <div className={styles.card}>
         <h4 className={styles.position}>Desenvolvedor</h4>
         <div className={styles.description}>
-          Bacharelando com sólida formação em ciência da computação e cursando mestrado em 
-          Informática na área de estudo Melhoria de Processo e Qualidade de Software pela 
-          Universidade Federal de Alagoas, possuindo experiência em desenvolvimento full stack 
-          Web e Mobile, e conhecimento em testes de software, segurança da informação e 
-          automação. Possui facilidade para aprender novas tecnologias e resolver 
-          problemas em ambientes desafiadores.
+          Bacharelando em Ciência da Computação e atualmente cursando mestrado em Informática, 
+          na área de Melhoria de Processo e Qualidade de Software, pela Universidade Federal de Alagoas. 
+          Possui experiência em desenvolvimento full stack Web e Mobile, além de conhecimento em testes 
+          de software, segurança da informação e automação. Tem facilidade para aprender novas tecnologias 
+          e resolver problemas em ambientes desafiadores.
         </div>
       </div>
+
+        <div>Tecnologias</div>
+        <div>Formação acadêmica</div>
+        <div>Experiência</div>
     </Page>
   );
 };

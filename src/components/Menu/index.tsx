@@ -1,10 +1,17 @@
 import React from "react";
 
 import { Sidebar, Menu as ProMenu, MenuItem, SubMenu } from 'react-pro-sidebar';
-import { MdContactPhone } from "react-icons/md";
+
+import { MdContactPhone, MdOutlineOndemandVideo } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { FaLaptopCode } from "react-icons/fa";
-import { IoHelpCircleOutline } from "react-icons/io5";
+import { IoHelpCircleOutline, IoFastFoodOutline} from "react-icons/io5";
+import { RiArticleLine } from "react-icons/ri";
+import { TbCertificate, TbDatabaseEdit  } from "react-icons/tb";
+
+
+
+import styles from "./Menu.module.css"
 
 import { Link } from "react-router-dom";
 
@@ -39,12 +46,15 @@ const Menu: React.FC<Props> = () => {
         },
       }}
     >
-      <h1>Portfolio</h1>
-      <MenuItem icon={<CgProfile />} component={<Link to="/profile" />}>Sobre </MenuItem>
+      <h1 className={styles.logo}>Portfólio</h1>
+      <MenuItem icon={<CgProfile />} component={<Link to="/profile" />}> Sobre </MenuItem>
         <SubMenu label="Projetos" icon={<FaLaptopCode />}>
-          <MenuItem icon={<IoHelpCircleOutline />}> Projeto 1</MenuItem>
-          <MenuItem icon={<IoHelpCircleOutline />}> Projeto 2</MenuItem>
+          <MenuItem icon={<IoFastFoodOutline />} component={<Link to="/myfood" />}> MyFood </MenuItem>
+          <MenuItem icon={<TbDatabaseEdit />} component={<Link to="/arko" />}> Desafio ARKO  </MenuItem>
         </SubMenu>
+      <MenuItem icon={<MdOutlineOndemandVideo />} component={<Link to="/courses" />}> Cursos </MenuItem>
+      <MenuItem icon={<TbCertificate />} component={<Link to="/certificates" />}> Certificados </MenuItem>
+      <MenuItem icon={<RiArticleLine />} component={<Link to="/articles" />}> Artigos </MenuItem>
       <MenuItem icon={<MdContactPhone />} component={<Link to="/contact" />}> Contato </MenuItem>
     </ProMenu>
   </Sidebar>
